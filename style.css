@@ -1,0 +1,125 @@
+* {
+  margin: 0 auto; }
+  * body {
+    font-family: 'Open Sans Condensed', sans-serif !important; }
+    * body header {
+      text-align: center;
+      font-size: 10vh;
+      background-color: #FFE9E2;
+      position: fixed;
+      width: 100%;
+      height: 100px;
+      margin-top: -30px;
+      z-index: 999; }
+      * body header .aboutNav {
+        font-size: 20px;
+        float: left;
+        background-color: #b5d7e1;
+        margin: 55px 0px 0px 20px;
+        width: 9vh; }
+        * body header .aboutNav a {
+          text-decoration: none;
+          color: white; }
+          * body header .aboutNav a:hover {
+            color: black; }
+      * body header .title {
+        text-align: center;
+        font-size: 40px;
+        letter-spacing: 2px;
+        font-weight: lighter;
+        margin-top: 20px; }
+      * body header .roomsNav {
+        font-size: 20px;
+        float: right;
+        background-color: #b5d7e1;
+        color: white;
+        margin: 55px 20px 0px 0px;
+        width: 9vh; }
+        * body header .roomsNav a {
+          text-decoration: none;
+          color: white; }
+          * body header .roomsNav a:hover {
+            color: black; }
+    * body #slideShow .slides {
+      position: relative;
+      width: 100%;
+      height: 500px; }
+      * body #slideShow .slides img {
+        width: 100%;
+        height: auto; }
+    * body #rooms {
+      margin-top: 40px; }
+      * body #rooms .roomsTitle {
+        background-color: #b5d7e1;
+        color: white;
+        width: 8vh; }
+      * body #rooms .roomsImage {
+        width: 75%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 40px; }
+    * body #about {
+      width: 90%;
+      margin-top: 40px; }
+      * body #about .aboutSection {
+        display: inline-block;
+        margin: 0;
+        width: 49%;
+        float: left; }
+        * body #about .aboutSection .aboutTitle {
+          margin-bottom: 5px; }
+        * body #about .aboutSection .aboutText {
+          font-size: 14px;
+          margin-bottom: 10px;
+          background-color: #b5d7e1;
+          border: 1px solid #FFFFFF;
+          border-radius: 5px;
+          font-weight: lighter;
+          text-align: left;
+          font-size: 12px; }
+      * body #about .aboutImage {
+        display: inline-block;
+        width: 49%;
+        float: right;
+        margin-top: 5%; }
+        * body #about .aboutImage img {
+          max-width: 100%; }
+    * body .modal .modal-dialog {
+      width: 60%;
+      position: absolute;
+      bottom: 10%;
+      right: 0;
+      margin-right: 20px; }
+      * body .modal .modal-dialog .modal-content {
+        padding: 10px; }
+        * body .modal .modal-dialog .modal-content p {
+          display: inline-block;
+          width: 60%;
+          height: auto;
+          max-height: 200px; }
+        * body .modal .modal-dialog .modal-content img {
+          width: 39%;
+          border-radius: 10%;
+          display: inline-block;
+          height: auto;
+          max-height: 130px; }
+    * body footer {
+      position: relative;
+      height: 40px;
+      width: 100%;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      font-size: 10px; }
+
+@media only screen and (min-width: 1050px) {
+  header .title {
+    font-size: 10px; }
+
+  .modal .modal-dialog .modal-content {
+    background-color: yellow; }
+    .modal .modal-dialog .modal-content img {
+      width: 200px !important;
+      height: auto; } }
+
+/*# sourceMappingURL=style.css.map */
