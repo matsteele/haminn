@@ -1,22 +1,30 @@
-* {
-	margin: 0 auto;
-	body {
-		 font-family: 'Open Sans Condensed', sans-serif !important;
-		header {
+body {
+	 font-family: 'Open Sans Condensed', sans-serif !important;
+	 // background-color: #ccc !important;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	.wrapper {
+		flex: 1;
+		nav {
 			text-align: center;
 			font-size: 10vh;
 			background-color: #FFE9E2;
-			position: fixed;
+			position: fixed !important;
 			width: 100%;
-			height: 100px;
-			margin-top: -30px;
+			// height: 100px;
+			margin: 0 auto !important;
+			padding-bottom: 20px;
+			// margin-top: -30px;
 			z-index: 999;
+
 			.aboutNav {
 				font-size: 20px;
-				float: left;
+
 				background-color: rgb(181, 215, 225);
-				margin: 55px 0px 0px 20px;
+				margin: 45px 20px 0px 20px;
 				width: 9vh;
+				padding: 10px;
 				a {
 					text-decoration: none;
 					color: white;
@@ -30,14 +38,15 @@
 				font-size: 40px;
 				letter-spacing: 2px;
 				font-weight: lighter;
-				margin-top: 20px;
+				// margin-top: 10px;
 			}
 			.roomsNav {
 				font-size: 20px;
-				float: right;
+				padding: 10px;
+
 				background-color: rgb(181, 215, 225);
 				color: white;
-				margin: 55px 20px 0px 0px;
+				margin: 45px 20px 0px 20px;
 				width: 9vh;
 				a {
 					text-decoration: none;
@@ -49,22 +58,68 @@
 			}
 		}
 		#slideShow {
-			// max-width: 100%;
-			// margin: 10px;
-			// overflow: hidden;
-			// min-height: 500px;
-			.slides {
-				// width: 100%;
-				position: relative;
+			padding-top: 100px;
+			width: 80%;
+			background-color: #fff;
+			min-height: 400px;
+			.slider {
 				width: 100%;
-				height: 500px;
-
-				// display: inline-block;
-				img {
-					width: 100%;
-  					height: auto;
+				overflow: hidden;
+				height: 300px;
+				position: relative;
+				button {
+					position: absolute;
+					display: block;
+					box-sizing: border-box;
+					border: none;
+					outline: none;
+					top: 0;
+					bottom: 0;
+					width: 20%;
+					background-color: rgba(0, 0, 0, 0.3);
+					color: #fff;
+					margin: 0;
+					padding: 0;
+					text-align:center;
+					opacity: 0;
+					z-index: 2;
+					&.prev {
+						left: 0;
+					}
+					&.next {
+						right: 0;
+					}
+					&:hover {
+						opacity: 1.0;
+					}
+					&:active {
+						opacity: 1.0;
+					}
 				}
-				// position: absolute;
+				.slides {
+					margin: 0;
+					padding: 0;
+					list-style: none;
+					position: absolute;
+					width: 300%;
+					height: 100%;
+					top: 0;
+					li {
+						padding: 0;
+						margin: 0;
+						width: 33.333333%;
+						height: 100%;
+						overflow: hidden;
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						img {
+							width: 100%;
+		  					border: none;
+							min-height: 100%;
+						}
+					}
+				}
 			}
 		}
 		#rooms {
@@ -111,6 +166,7 @@
 				width: 49%;
 				float: right;
 				margin-top: 5%;
+				margin-bottom: 8vh;
 				img {
 					max-width: 100%;
 				}
@@ -142,17 +198,18 @@
 			}
 		}
 		footer {
-			// background-color: #FFE9E2;
-			position: relative;
-			height: 40px;
+			background-color: #FFE9E2;
+			// position: relative;
+			// height: 60px;
 			width: 100%;
-			bottom: 0;
-			right: 0;
-			left: 0;
-			// margin-top: 320px;
-			// padding-top: 2px;
-			// padding-bottom: 15px;
+			// bottom: 0;
+			// margin-top: 20px !important;
+			// padding-top: 10px !important;
+			// padding-top: 15px;
 			font-size: 10px;
+			.text-center {
+				// margin-top: 20px;
+			}
 		}
 	}
 }

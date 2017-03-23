@@ -38,12 +38,13 @@ $.ajax({
 
        if (type == "text") {
          	var content = results.response.posts[i].body;
-         	 console.log(_.keys(content));
-         	 $("#slideShow").append("<div class='postbody'>" + content + "</div>");
+         	var image = content.substr(84,100);
+         	 console.log(image);
+         	 $(".slides").append("<li><img src='" + image + "'/></li>");
 	         	// $("#slideShow").append("<div class='slides'><img src='" + content + "'/></div>");
        } else if (type == "photo") {
        		var photourl = results.response.posts[i].photos[0].alt_sizes[i].url;
-       		$("#slideShow").append("<div class='slides'><img src='" + photourl + "'/></div>");
+       		$(".slides").append("<li><img src='" + photourl + "'/></li>");
        }
     i++;
      }//END WHILE
