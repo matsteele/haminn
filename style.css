@@ -27,7 +27,7 @@ body {
             color: black; }
       body .wrapper nav .title {
         text-align: center;
-        font-size: 40px;
+        font-size: 35px;
         letter-spacing: 2px;
         font-weight: lighter; }
       body .wrapper nav .roomsNav {
@@ -159,9 +159,13 @@ body {
       width: 100%;
       font-size: 10px; }
 
-@media only screen and (min-width: 1050px) {
-  header .title {
-    font-size: 10px; }
+@media only screen and (max-width: 768px) {
+  body .wrapper nav .aboutNav {
+    font-size: 14px; }
+  body .wrapper nav .title {
+    font-size: 16px; }
+  body .wrapper nav .roomsNav {
+    font-size: 14px; }
 
   .modal .modal-dialog .modal-content {
     background-color: yellow; }

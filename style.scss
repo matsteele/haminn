@@ -35,9 +35,10 @@ body {
 			}
 			.title {
 				text-align: center;
-				font-size: 40px;
+				font-size: 35px;
 				letter-spacing: 2px;
 				font-weight: lighter;
+
 				// margin-top: 10px;
 			}
 			.roomsNav {
@@ -214,10 +215,20 @@ body {
 	}
 }
 
-@media only screen and (min-width:1050px) {
-	header {
-		.title {
-			font-size: 10px;
+@media only screen and (max-width:768px) {
+	body {
+		.wrapper {
+			nav {
+				.aboutNav {
+					font-size: 14px;
+				}
+				.title {
+					font-size: 16px;
+				}
+				.roomsNav {
+					font-size: 14px;
+				}
+			}
 		}
 	}
 	.modal {
@@ -232,3 +243,8 @@ body {
 		}
 	}
 }
+
+
+
+
+
