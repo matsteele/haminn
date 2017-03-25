@@ -131,12 +131,30 @@ body {
 				width: 8vh;
 			}
 			.roomsImage {
-				width: 75%;
-				text-align: center;
-				margin: 0 auto;
-				margin-top: 40px;
+				// width: 100%;
+				// text-align: center;
+				// margin: 0 auto;
+				// margin-top: 40px;
 			}
 		}
+
+		svg {
+			position: absolute;
+			width: 100%;
+			// padding: 0 4% 1% 0;
+			// // display: block;
+			// // width: 100%;
+			// text-align: center;
+			// margin: 0 auto;
+			// margin-top: 40px;
+			// width: auto;
+			// height: auto;
+			// background-color: .05 blue;
+
+
+		}
+
+
 		#about {
 			// text-align: center;
 			width: 90%;
@@ -243,8 +261,3 @@ body {
 		}
 	}
 }
-
-
-
-
-

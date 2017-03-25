@@ -103,11 +103,9 @@ body {
         background-color: #b5d7e1;
         color: white;
         width: 8vh; }
-      body .wrapper #rooms .roomsImage {
-        width: 75%;
-        text-align: center;
-        margin: 0 auto;
-        margin-top: 40px; }
+    body .wrapper svg {
+      position: absolute;
+      width: 100%; }
     body .wrapper #about {
       width: 90%;
       margin-top: 40px; }
