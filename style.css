@@ -98,22 +98,24 @@ body {
               border: none;
               min-height: 100%; }
     body .wrapper #rooms {
-      margin-top: 40px; }
+      margin-left: 15%;
+      margin-top: 40px;
+      width: 70%; }
       body .wrapper #rooms .roomsTitle {
         background-color: #b5d7e1;
         color: white;
-        width: 8vh; }
+        width: 10vh;
+        font-size: 16px; }
     body .wrapper svg {
       position: absolute;
-      width: 100%; }
+      width: 70%; }
     body .wrapper #about {
       width: 100%;
       margin-top: 40px; }
       body .wrapper #about .aboutSection {
         display: inline-block;
         margin: 0;
-        width: 49%;
-        float: left; }
+        width: 100%; }
         body .wrapper #about .aboutSection .aboutTitle {
           margin-bottom: 5px; }
         body .wrapper #about .aboutSection hr {
@@ -131,13 +133,6 @@ body {
             color: #b5d7e1; }
           body .wrapper #about .aboutSection .aboutText a {
             font-size: 14px; }
-      body .wrapper #about .aboutImage {
-        display: inline-block;
-        width: 45%;
-        float: right;
-        margin: 5% 5% 5% 0%; }
-        body .wrapper #about .aboutImage img {
-          max-width: 100%; }
     body .wrapper footer {
       background-color: #FFE9E2;
       width: 100%;
@@ -197,11 +192,6 @@ body {
     font-size: 16px; }
   body .wrapper nav .roomsNav {
     font-size: 14px; }
-  body .wrapper #about .aboutSection {
-    width: 100%;
-    float: none; }
-  body .wrapper #about .aboutImage {
-    display: none; }
   body .wrapper .modalDialog > div {
     width: 75%; } }
 

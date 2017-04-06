@@ -124,11 +124,14 @@ body {
 			}
 		}
 		#rooms {
+			margin-left: 15%;
 			margin-top: 40px;
+			width: 70%;
 			.roomsTitle {
 				background-color: rgb(181, 215, 225);
 				color: white;
-				width: 8vh;
+				width: 10vh;
+				font-size: 16px;
 			}
 			.roomsImage {
 				// width: 100%;
@@ -140,7 +143,7 @@ body {
 
 		svg {
 			position: absolute;
-			width: 100%;
+			width: 70%;
 			// padding: 0 4% 1% 0;
 			// // display: block;
 			// // width: 100%;
@@ -161,8 +164,7 @@ body {
 			.aboutSection {
 				display: inline-block;
 				margin: 0;
-				width: 49%;
-				float: left;
+				width: 100%;
 				.aboutTitle {
 					margin-bottom: 5px;
 				}
@@ -185,15 +187,6 @@ body {
 					a {
 						font-size: 14px;
 					}
-				}
-			}
-			.aboutImage {
-				display: inline-block;
-				width: 45%;
-				float: right;
-				margin: 5% 5% 5% 0%;
-				img {
-					max-width: 100%;
 				}
 			}
 		}
@@ -272,15 +265,6 @@ body {
 				}
 				.roomsNav {
 					font-size: 14px;
-				}
-			}
-			#about {
-				.aboutSection {
-					width: 100%;
-					float: none;
-				}
-				.aboutImage {
-					display: none;
 				}
 			}
 			.modalDialog {
