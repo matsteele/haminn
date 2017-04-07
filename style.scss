@@ -13,11 +13,11 @@ body {
 			position: fixed !important;
 			width: 100%;
 			// height: 100px;
-			margin: 0 auto !important;
-			padding-bottom: 20px;
+			// margin: 0 auto !important;
+			padding-bottom: 10px;
+			margin-top: -20px !important;
 			// margin-top: -30px;
 			z-index: 999;
-
 			.aboutNav {
 				font-size: 20px;
 
@@ -58,68 +58,12 @@ body {
 				}
 			}
 		}
-		#slideShow {
-			padding-top: 100px;
-			width: 80%;
-			background-color: #fff;
-			min-height: 400px;
-			.slider {
-				width: 100%;
-				overflow: hidden;
-				height: 300px;
-				position: relative;
-				button {
-					position: absolute;
-					display: block;
-					box-sizing: border-box;
-					border: none;
-					outline: none;
-					top: 0;
-					bottom: 0;
-					width: 20%;
-					background-color: rgba(0, 0, 0, 0.3);
-					color: #fff;
-					margin: 0;
-					padding: 0;
-					text-align:center;
-					opacity: 0;
-					z-index: 2;
-					&.prev {
-						left: 0;
-					}
-					&.next {
-						right: 0;
-					}
-					&:hover {
-						opacity: 1.0;
-					}
-					&:active {
-						opacity: 1.0;
-					}
-				}
-				.slides {
-					margin: 0;
-					padding: 0;
-					list-style: none;
-					position: absolute;
-					width: 300%;
-					height: 100%;
-					top: 0;
-					li {
-						padding: 0;
-						margin: 0;
-						width: 33.333333%;
-						height: 100%;
-						overflow: hidden;
-						position: absolute;
-						top: 0;
-						bottom: 0;
-						img {
-							width: 100%;
-		  					border: none;
-							min-height: 100%;
-						}
-					}
+		.carousel {
+			margin-top: 75px;
+			.item {
+				img {
+					margin: 0 auto;
+    				width: 100%;
 				}
 			}
 		}
@@ -155,15 +99,6 @@ body {
 			svg {
 				position: absolute;
 				width: 70%;
-				// padding: 0 4% 1% 0;
-				// // display: block;
-				// // width: 100%;
-				// text-align: center;
-				// margin: 0 auto;
-				// margin-top: 40px;
-				// width: auto;
-				// height: auto;
-				// background-color: .05 blue;
 				.roomSVGs{
 					opacity: 0.3;
 					fill: #EC008C;
@@ -178,6 +113,7 @@ body {
 		#about {
 			width: 100%;
 			margin-top: 40px;
+			margin-bottom: 20px;
 			.aboutSection {
 				display: inline-block;
 				margin: 0;
@@ -231,12 +167,28 @@ body {
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
 	pointer-events: none;
+	font-family: 'Open Sans Condensed';
 	&:target {
 		opacity: 1;
 		pointer-events: auto;
   	}
   	& > .roomModal {
   		background: #FFE9E2;
+  		h2 {
+  			text-align: center;
+  		}
+  		.book {
+  			border-radius: 10%;
+  			text-transform: uppercase;
+  			background-color: rgb(181, 215, 225);
+  			border: 0px;
+
+  			&:hover {
+  				font-size: 20px;
+  				// color: #FFE9E2;
+  				font-weight: bold;
+  			}
+  		}
   	}
 	& > div {
 		width: 400px;
@@ -248,14 +200,16 @@ body {
 		background: -moz-linear-gradient(#fff, #999);
 		background: -webkit-linear-gradient(#fff, #999);
 	 	background: -o-linear-gradient(#fff, #999);
+	 	max-height: calc(100vh - 110px);
+    	overflow: auto;
 		.close {
 			background: #606061;
 			color: #FFFFFF;
 			line-height: 25px;
 			position: absolute;
-			right: -12px;
+			right: 4px;
 			text-align: center;
-			top: -10px;
+			top: 4px;
 			width: 24px;
 			text-decoration: none;
 			font-weight: bold;
@@ -266,7 +220,7 @@ body {
 			-webkit-box-shadow: 1px 1px 3px #000;
 			box-shadow: 1px 1px 3px #000;
 			&:hover {
-		 		background: #00d9ff;
+		 		background: black;
 		  	}
 	  	}
   	}
