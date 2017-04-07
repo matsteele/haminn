@@ -2,72 +2,72 @@ $(document).ready(function(){
 
 
 
-$.ajax({
-    url: "https://api.tumblr.com/v2/blog/hamiltoninn.tumblr.com/posts?api_key=WQTrLyh8i3aED9OudzSudBRRcmQyUZwgCXOaelEwnphBpNvfhV",
-    dataType: 'jsonp',
-    success: function(results){
-      // Print Title On the Page
-     var i = 0;
+// $.ajax({
+//     url: "https://api.tumblr.com/v2/blog/hamiltoninn.tumblr.com/posts?api_key=WQTrLyh8i3aED9OudzSudBRRcmQyUZwgCXOaelEwnphBpNvfhV",
+//     dataType: 'jsonp',
+//     success: function(results){
+//       // Print Title On the Page
+//      var i = 0;
 
-     while (i < 10) {
+//      while (i < 10) {
 
-         var type = results.response.posts[i].type;
+//          var type = results.response.posts[i].type;
 
-         if (type == "text") {
-           	var content = results.response.posts[i].body;
-           	var image = content.substr(84,100);
-           	 // console.log(image);
-           	 $(".slides").append("<li><img src='" + image + "'/></li>");
-             	// $("#slideShow").append("<div class='slides'><img src='" + content + "'/></div>");
-         } else if (type == "photo") {
-         		var photourl = results.response.posts[i].photos[0].alt_sizes[i].url;
-         		$(".slides").append("<li><img src='" + photourl + "'/></li>");
-         }
-      i++;
-     }//END WHILE
+//          if (type == "text") {
+//            	var content = results.response.posts[i].body;
+//            	var image = content.substr(84,100);
+//            	 // console.log(image);
+//            	 $(".slides").append("<li><img src='" + image + "'/></li>");
+//              	// $("#slideShow").append("<div class='slides'><img src='" + content + "'/></div>");
+//          } else if (type == "photo") {
+//          		var photourl = results.response.posts[i].photos[0].alt_sizes[i].url;
+//          		$(".slides").append("<li><img src='" + photourl + "'/></li>");
+//          }
+//       i++;
+//      }//END WHILE
 
-    }//END RESULTS FUNCTION
-});
+//     }//END RESULTS FUNCTION
+// });
 
-$(function() {
+// $(function() {
 
-var ul = $(".slider ul");
-var slide_count = ul.children().length;
-var slide_width_pc = 100.0 / slide_count;
-var slide_index = 0;
+// var ul = $(".slider ul");
+// var slide_count = ul.children().length;
+// var slide_width_pc = 100.0 / slide_count;
+// var slide_index = 0;
 
-ul.find("li").each(function(indx) {
-  var left_percent = (slide_width_pc * indx) + "%";
-  $(this).css({"left":left_percent});
-  $(this).css({width:(100 / slide_count) + "%"});
-});
+// ul.find("li").each(function(indx) {
+//   var left_percent = (slide_width_pc * indx) + "%";
+//   $(this).css({"left":left_percent});
+//   $(this).css({width:(100 / slide_count) + "%"});
+// });
 
-// Listen for click of prev button
-$(".slider .prev").click(function() {
-  console.log("prev button clicked");
-  slide(slide_index - 1);
-});
+// // Listen for click of prev button
+// $(".slider .prev").click(function() {
+//   console.log("prev button clicked");
+//   slide(slide_index - 1);
+// });
 
-// Listen for click of next button
-$(".slider .next").click(function() {
-  console.log("next button clicked");
-  slide(slide_index + 1);
-});
+// // Listen for click of next button
+// $(".slider .next").click(function() {
+//   console.log("next button clicked");
+//   slide(slide_index + 1);
+// });
 
-function slide(new_slide_index) {
+// function slide(new_slide_index) {
 
-      if(new_slide_index < 0 || new_slide_index >= slide_count) return; 
+//       if(new_slide_index < 0 || new_slide_index >= slide_count) return; 
 
-      var margin_left_pc = (new_slide_index * (-100)) + "%";
+//       var margin_left_pc = (new_slide_index * (-100)) + "%";
 
-      ul.animate({"margin-left": margin_left_pc}, 400, function() {
+//       ul.animate({"margin-left": margin_left_pc}, 400, function() {
 
-      slide_index = new_slide_index
+//       slide_index = new_slide_index
 
-    });
-  }
-});
-var RoomName;
+//     });
+//   }
+// });
+// var RoomName;
 
 
-});
+// });
