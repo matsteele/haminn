@@ -44,39 +44,47 @@
 
 	<section id="rooms">
 		<p class="roomsTitle center-block text-center">ROOMS</p>
-		<div id="rightRoomMod" hidden="yes">
+<!-- 		<div id="rightRoomMod" hidden="yes">
 
-			<h1 type="text" id="roomName" value="test">
-			</h1>
-
-			<p type="text" id="roomSummary" value="test">
-			</p>
-
-			<p type="text" id="Price4_1" value="test">
-			</p>
+			<a href="#openRoom1" class="roomModal"></a>
 
 			<button type="text" id="Summary"> BOOK
 			</button>
 
-		</div>
+		</div> -->
 
 		<svg version="1.1" id="Layer_1" class="img-responsive center-block text-center" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="1190px" height="1261px" viewBox="0 0 1190 1261" enable-background="new 0 0 1190 1261" xml:space="preserve">
 					<g>
-						<polygon class="roomSVGs" id="fourOne" fill="blue" points="626,259 827,324 980,191 775,137 	"/>
-						<polygon class="roomSVGs" id="fourTwo" points="585,78 428,195 270,145 436,35 	"/>
-						<polygon class="roomSVGs" id="fourThree" points="397,368 504,284 383,239 270,321 	"/>
-						<polygon class="roomSVGs" id="threeTwo" points="406,427 525,469 412,572 292,524 	"/>
-						<polygon class="roomSVGs" id="twoTwo" points="380,759 484,653 366,602 258,705 	"/>
-						<polygon class="roomSVGs" id="oneTwo" points="495,215 572,155 697,190 620,254 	"/>
-						<polyline class="roomSVGs" id="oneOne" points="655,880 751,765 838,797 880,759 935,776 803,947 	"/>
-						<polyline class="roomSVGs" id="den" points="310,931 866,1197 968,1039 918,1011 896,1033 427.5,817 	"/>
+						<a href="#openRoom4_1">
+							<polygon class="roomSVGs" id="fourOne" fill="blue" points="626,259 827,324 980,191 775,137 	"/>
+						</a>
+						<a href="#openRoom4_2">
+							<polygon class="roomSVGs" id="oneTwo" points="495,215 572,155 697,190 620,254 	"/>
+						</a>
+						<a href="#openRoom4_3">
+							<polygon class="roomSVGs" id="fourTwo" points="585,78 428,195 270,145 436,35 	"/>
+						</a>
+						<a href="#openRoom3_2">
+							<polygon class="roomSVGs" id="fourThree" points="397,368 504,284 383,239 270,321 	"/>
+						</a>
+						<a href="#openRoom2_2">
+							<polygon class="roomSVGs" id="threeTwo" points="406,427 525,469 412,572 292,524 	"/>
+						</a>
+						<a href="#openRoom1_1">
+							<polygon class="roomSVGs" id="twoTwo" points="380,759 484,653 366,602 258,705 	"/>
+						</a>
+						<a href="#openRoom1_2">
+							<polyline class="roomSVGs" id="oneOne" points="655,880 751,765 838,797 880,759 935,776 803,947 	"/>
+						</a>
+						<a href="#openRoom0">
+							<polyline class="roomSVGs" id="den" points="310,931 866,1197 968,1039 918,1011 896,1033 427.5,817 	"/>
+						</a>
 					</g>
 
 					<img class="roomsImage img-responsive center-block text-center" src="images/roomsEdited-01.png">
 
 		</svg>
-
 
 
 	</section>
@@ -93,9 +101,89 @@
 		</div>
 	</section>
 
-	<br>
+			<!-- Room Modals -->
 
-			<!-- Modals -->
+			<div id="openRoom4_1" class="modalDialog">
+				<div class="roomModal">
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>Room 4.1</h2>
+					<p>Huge Suite</p>
+					<button>Book</button>
+				</div>
+			</div>
+
+			<div id="openRoom4_2" class="modalDialog">
+				<div class="roomModal">
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>Room 4.2</h2>
+					<p>Shared Space</p>
+					<button>Book</button>
+				</div>
+			</div>
+
+			<div id="openRoom4_3" class="modalDialog">
+				<div class="roomModal">
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>Room 4.3</h2>
+					<p>Nice top floor room.</p>
+					<button>Book</button>
+				</div>
+			</div>
+
+			<div id="openRoom3_2" class="modalDialog">
+				<div class="roomModal">
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>Room 3.2</h2>
+					<p>Private Bath</p>
+					<p>Office Space</p>
+					<button>Book</button>
+				</div>
+			</div>
+
+			<div id="openRoom2_2" class="modalDialog">
+				<div class="roomModal">
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>Room 2.2</h2>
+					<p>Private Bath</p>
+					<p>Kitchen</p>
+					<img class="img-responsive" src="images/kitchenbacks.jpg">
+					<br>
+					<button>Book</button>
+				</div>
+			</div>
+
+			<div id="openRoom1_1" class="modalDialog">
+				<div class="roomModal">
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>Room 1.2</h2>
+					<p>Large bedroom with backyard access.</p>
+					<p>Immmmmmm</p>
+					<button>Book</button>
+				</div>
+			</div>
+
+			<div id="openRoom1_2" class="modalDialog">
+				<div class="roomModal">
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>Room 1.1</h2>
+					<p>Master Suite</p>
+					<p>Private Bathroom</p>
+					<button>Book</button>
+				</div>
+			</div>
+
+			<div id="openRoom0" class="modalDialog">
+				<div class="roomModal">
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>The Den</h2>
+					<p>Envision yourself in the LION'S DEN!</p>
+					<p>Immmmmmm</p>
+					<button>Book</button>
+				</div>
+			</div>
+
+
+			<!-- About Modals -->
 
 			<div id="openModal1" class="modalDialog">
 				<div>
