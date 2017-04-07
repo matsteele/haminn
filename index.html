@@ -44,39 +44,39 @@
 
 	<section id="rooms">
 		<p class="roomsTitle center-block text-center">ROOMS</p>
-		<div id="rightRoomMod" hidden="yes">
-
-			<h1 type="text" id="roomName" value="test">
-			</h1>
-
-			<p type="text" id="roomSummary" value="test">
-			</p>
-
-			<p type="text" id="Price4_1" value="test">
-			</p>
-
-			<button type="text" id="Summary"> BOOK
-			</button>
-
-		</div>
 
 		<svg version="1.1" id="Layer_1" class="img-responsive center-block text-center" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="1190px" height="1261px" viewBox="0 0 1190 1261" enable-background="new 0 0 1190 1261" xml:space="preserve">
 					<g>
-						<polygon class="roomSVGs" id="fourOne" fill="blue" points="626,259 827,324 980,191 775,137 	"/>
-						<polygon class="roomSVGs" id="fourTwo" points="585,78 428,195 270,145 436,35 	"/>
-						<polygon class="roomSVGs" id="fourThree" points="397,368 504,284 383,239 270,321 	"/>
-						<polygon class="roomSVGs" id="threeTwo" points="406,427 525,469 412,572 292,524 	"/>
-						<polygon class="roomSVGs" id="twoTwo" points="380,759 484,653 366,602 258,705 	"/>
-						<polygon class="roomSVGs" id="oneTwo" points="495,215 572,155 697,190 620,254 	"/>
-						<polyline class="roomSVGs" id="oneOne" points="655,880 751,765 838,797 880,759 935,776 803,947 	"/>
-						<polyline class="roomSVGs" id="den" points="310,931 866,1197 968,1039 918,1011 896,1033 427.5,817 	"/>
+						<a href="#openRoom4_1">
+							<polygon class="roomSVGs" id="fourOne" fill="blue" points="626,259 827,324 980,191 775,137 	"/>
+						</a>
+						<a href="#openRoom4_2">
+							<polygon class="roomSVGs" id="oneTwo" points="495,215 572,155 697,190 620,254 	"/>
+						</a>
+						<a href="#openRoom4_3">
+							<polygon class="roomSVGs" id="fourTwo" points="585,78 428,195 270,145 436,35 	"/>
+						</a>
+						<a href="#openRoom3_2">
+							<polygon class="roomSVGs" id="fourThree" points="397,368 504,284 383,239 270,321 	"/>
+						</a>
+						<a href="#openRoom2_2">
+							<polygon class="roomSVGs" id="threeTwo" points="406,427 525,469 412,572 292,524 	"/>
+						</a>
+						<a href="#openRoom1_1">
+							<polygon class="roomSVGs" id="twoTwo" points="380,759 484,653 366,602 258,705 	"/>
+						</a>
+						<a href="#openRoom1_2">
+							<polyline class="roomSVGs" id="oneOne" points="655,880 751,765 838,797 880,759 935,776 803,947 	"/>
+						</a>
+						<a href="#openRoom0">
+							<polyline class="roomSVGs" id="den" points="310,931 866,1197 968,1039 918,1011 896,1033 427.5,817 	"/>
+						</a>
 					</g>
 
 					<img class="roomsImage img-responsive center-block text-center" src="images/roomsEdited-01.png">
 
 		</svg>
-
 
 
 	</section>
@@ -85,69 +85,178 @@
 		<div class="aboutSection text-center">
 			<h2 class="aboutTitle">About</h2>
 			<hr>
-			<button id="about1" class="aboutText fa fa-home"></button>
-			<br>
-			<button id="about2" class="aboutText fa fa-gavel"></button>
-			<br>
-			<button class="aboutText fa fa-suitcase"></button>
-			<br>
-			<button class="aboutText fa fa-sun-o"></button>
-			<br>
-			<button class="aboutText fa fa-list"></button>
-		</div>
-		<div class="aboutImage">
-			<img class="center-block img-rounded" src="images/girl.jpg">
+			<a href="#openModal1" class="aboutText fa fa-home"></a>
+			<a href="#openModal2" class="aboutText fa fa-gavel"></a>
+			<a href="#openModal3" class="aboutText fa fa-suitcase"></a>
+			<a href="#openModal4" class="aboutText fa fa-sun-o"></a>
+			<a href="#openModal5" class="aboutText fa fa-list"></a>
 		</div>
 	</section>
 
-	<br>
+			<!-- Room Modals -->
 
-
-
-
-
-			<!-- Modals -->
-
-			<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-			  <div class="modal-dialog modal-sm pull-right">
-			    <div class="modal-content">
-			    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			    	<img src="images/bedroom.jpg">
-			    </div>
-			  </div>
+			<div id="openRoom4_1" class="modalDialog">
+				<div class="roomModal">
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>Room 4.1</h2>
+					<p>Huge Suite</p>
+					<button>Book</button>
+				</div>
 			</div>
-<!-- 			<div class="modal2 fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-			  <div class="modal-dialog modal-sm pull-right">
-			    <div class="modal-content">
-			    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			    	<img class="img-responsive center-block pull-right" src="images/bedroom.jpg">
-			    </div>
-			  </div>
-			</div> -->
+
+			<div id="openRoom4_2" class="modalDialog">
+				<div class="roomModal">
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>Room 4.2</h2>
+					<p>Shared Space</p>
+					<button>Book</button>
+				</div>
+			</div>
+
+			<div id="openRoom4_3" class="modalDialog">
+				<div class="roomModal">
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>Room 4.3</h2>
+					<p>Nice top floor room.</p>
+					<button>Book</button>
+				</div>
+			</div>
+
+			<div id="openRoom3_2" class="modalDialog">
+				<div class="roomModal">
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>Room 3.2</h2>
+					<p>Private Bath</p>
+					<p>Office Space</p>
+					<button>Book</button>
+				</div>
+			</div>
+
+			<div id="openRoom2_2" class="modalDialog">
+				<div class="roomModal">
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>Room 2.2</h2>
+					<p>Private Bath</p>
+					<p>Kitchen</p>
+					<img class="img-responsive" src="images/kitchenbacks.jpg">
+					<br>
+					<button>Book</button>
+				</div>
+			</div>
+
+			<div id="openRoom1_1" class="modalDialog">
+				<div class="roomModal">
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>Room 1.2</h2>
+					<p>Large bedroom with backyard access.</p>
+					<p>Immmmmmm</p>
+					<button>Book</button>
+				</div>
+			</div>
+
+			<div id="openRoom1_2" class="modalDialog">
+				<div class="roomModal">
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>Room 1.1</h2>
+					<p>Master Suite</p>
+					<p>Private Bathroom</p>
+					<button>Book</button>
+				</div>
+			</div>
+
+			<div id="openRoom0" class="modalDialog">
+				<div class="roomModal">
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>The Den</h2>
+					<p>Envision yourself in the LION'S DEN!</p>
+					<p>Immmmmmm</p>
+					<button>Book</button>
+				</div>
+			</div>
 
 
+			<!-- About Modals -->
+
+			<div id="openModal1" class="modalDialog">
+				<div>
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>The House</h2>
+					<p>We are a group of New Yorkers living in a big beautiful townhouse in Manhattan. We are excited to share our house with travelers to help us afford living here. We work in tech, in international/urban development, and theatre.</p>
+					<p>It's a mixed neighborhood, with a large Puerto Rican population to the north, lots of students to the south and a large black population to the east. I'd like to think Hamilton Heights is the hippest part of upper Manhattan, but I might be biased. It is one of the safest neighborhoods in the city. There are cute bars and restaurants and a recent surge of gay people priced out of Hells Kitchen. If you are racist, homophobic, or xenophobic, you won't be comfortable here, or in most of NYC.  </p>
+				</div>
+			</div>
+
+			<div id="openModal2" class="modalDialog">
+				<div>
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>House Rules</h2>
+					<h4>Parking</h4>
+					<p>The house does not have a garage or a designated parking spot, and there is limited available street parking around the neighborhood. The ‘Stable Car Parking Lot’ is one block north of the house on 153rd, between Broadway and Riverside Dr. Rates start at $22 per 24hr and $300 per month. </p>
+					<h4>Your Room/Guest Access</h4>
+					<p>Put your shoes in the shoe pallet thing at the door, and make yourself at home! You have access to either kitchen (including the fridge), laundry in the basement, and private patio on the first floor, east side of the building. The large shampoo, conditioner, and mint soap is for you to use. We also provide laundry detergent for those who use the laundry. You will find a clean towel on your bed. Let us know if you need anything else. </p>
+					<h4>Heat and AC</h4>
+					<p>Please help us conserve energy by being mindful of closing doors and windows to help control the temperature within the place. Heating this large of a house is especially expensive. Help us keep the costs down for this place so we can keep it cheap for guests. Specifically, please keep all of the front doors closed. If it is too hot in your room, please turn down the thermostat and notify someone in the house. Please do not open a window.  </p>
+					<h4>Internet</h4>
+					<p>Network Name: Depot (There are multiple, all use the same password) 
+					<p>Password: NYSeattle<p>
+					<p>If for any reason the Internet is not working, find the router in the window on the main kitchen floor and switch the power strip off and on once to reboot. Please do not watch or download copyrighted material with our internet.</p>
+					<h4></h4>
+					<p></p>
+					<h4></h4>
+					<p></p>
+					<h4></h4>
+					<p></p>
+					<h4></h4>
+					<p></p>
+				</div>
+			</div>
+
+			<div id="openModal3" class="modalDialog">
+				<div>
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>Travel</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</div>
+
+			<div id="openModal4" class="modalDialog">
+				<div>
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>The Area</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</div>
+
+			<div id="openModal5" class="modalDialog">
+				<div>
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>Checkout</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</div>
 
 
-
-<!-- 		<script>
-$(document).ready(function(){
-    $( "#test" ).hover(function() {
-           $('.modal').modal({
-        show: true
-    });
-  });
-});
-	</script> -->
 
 	</div>
 		<footer class="text-center">
