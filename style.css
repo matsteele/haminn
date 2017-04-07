@@ -103,9 +103,26 @@ body {
         background-color: #b5d7e1;
         color: white;
         width: 8vh; }
-    body .wrapper svg {
-      position: absolute;
-      width: 100%; }
+      body .wrapper #rooms #rightRoomMod {
+        position: absolute;
+        background-color: grey;
+        height: 500px;
+        width: 300px; }
+        body .wrapper #rooms #rightRoomMod #roomName {
+          color: white; }
+        body .wrapper #rooms #rightRoomMod #roomSummary {
+          color: lightgrey; }
+        body .wrapper #rooms #rightRoomMod #Price4_1 {
+          color: white;
+          font-size: 20px; }
+      body .wrapper #rooms svg {
+        position: absolute;
+        width: 100%; }
+        body .wrapper #rooms svg .roomSVGs {
+          opacity: 0.3;
+          fill: #EC008C; }
+          body .wrapper #rooms svg .roomSVGs:hover {
+            fill: blue; }
     body .wrapper #about {
       width: 90%;
       margin-top: 40px; }
