@@ -58,7 +58,7 @@ body {
 				}
 			}
 		}
-		.carousel {
+		.mainCarousel {
 			margin-top: 75px;
 			.item {
 				img {
@@ -173,35 +173,10 @@ body {
 		pointer-events: auto;
   	}
   	& > .roomModal {
-  		background: #FFE9E2;
-  		h2 {
-  			text-align: center;
-  		}
-  		div {
-  			// font-size: 20px;
-  			// text-indent: 25px;
-  			// img {
-  			// 	width: 35%;
-  			// 	height: auto;
-  			// 	// float: right;
-  			// 	padding: 8px;
-  			// 	border-radius: 20px;
-  			// }
-  		}
-	  		p {
-	  			.book {
-	  			font-size: 20px;
-	  			margin-top: 2%;
-	  			border-radius: 10%;
-	  			text-transform: uppercase;
-	  			background-color: rgb(181, 215, 225);
-	  			border: 0px;
-	  			&:hover {
-	  				font-size: 30px;
-	  				// color: #FFE9E2;
-	  				font-weight: bold;
-	  			}
-	  		}
+  		background: white;
+  		p {
+  			margin-top: 10px;
+  			font-size: 2vh;
   		}
   	}
 	& > div {
