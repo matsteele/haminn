@@ -128,13 +128,15 @@ body {
     background: #FFE9E2; }
     .modalDialog > .roomModal h2 {
       text-align: center; }
-    .modalDialog > .roomModal .book {
+    .modalDialog > .roomModal p .book {
+      font-size: 20px;
+      margin-top: 2%;
       border-radius: 10%;
       text-transform: uppercase;
       background-color: #b5d7e1;
       border: 0px; }
-      .modalDialog > .roomModal .book:hover {
-        font-size: 20px;
+      .modalDialog > .roomModal p .book:hover {
+        font-size: 30px;
         font-weight: bold; }
   .modalDialog > div {
     width: 400px;
@@ -147,7 +149,12 @@ body {
     background: -webkit-linear-gradient(#fff, #999);
     background: -o-linear-gradient(#fff, #999);
     max-height: calc(100vh - 110px);
-    overflow: auto; }
+    overflow: auto;
+    margin-bottom: 20px; }
+    .modalDialog > div p span {
+      display: block; }
+      .modalDialog > div p span:first-child {
+        font-weight: bolder; }
     .modalDialog > div .close {
       background: #606061;
       color: #FFFFFF;
