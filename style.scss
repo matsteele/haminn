@@ -201,7 +201,6 @@ body {
     		}
     	}
 		.close {
-			
 			background: #606061;
 			color: #FFFFFF;
 			line-height: 25px;
@@ -249,4 +248,11 @@ body {
 	}
 }
 
+@media only screen and (min-width:768px) {
+	.modalDialog {
+		& > div {
+			height: 70%;
+		}
+	}
+}
 

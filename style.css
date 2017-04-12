@@ -175,5 +175,8 @@ body {
     font-size: 14px; }
   body .wrapper .modalDialog > div {
     width: 75%; } }
+@media only screen and (min-width: 768px) {
+  .modalDialog > div {
+    height: 70%; } }
 
 /*# sourceMappingURL=style.css.map */
