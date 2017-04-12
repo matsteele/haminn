@@ -42,9 +42,9 @@ body {
           color: white; }
           body .wrapper nav .roomsNav a:hover {
             color: black; }
-    body .wrapper .carousel {
+    body .wrapper .mainCarousel {
       margin-top: 75px; }
-      body .wrapper .carousel .item img {
+      body .wrapper .mainCarousel .item img {
         margin: 0 auto;
         width: 100%; }
     body .wrapper #rooms {
@@ -140,19 +140,10 @@ body {
     opacity: 1;
     pointer-events: auto; }
   .modalDialog > .roomModal {
-    background: #FFE9E2; }
-    .modalDialog > .roomModal h2 {
-      text-align: center; }
-    .modalDialog > .roomModal p .book {
-      font-size: 20px;
-      margin-top: 2%;
-      border-radius: 10%;
-      text-transform: uppercase;
-      background-color: #b5d7e1;
-      border: 0px; }
-      .modalDialog > .roomModal p .book:hover {
-        font-size: 30px;
-        font-weight: bold; }
+    background: white; }
+    .modalDialog > .roomModal p {
+      margin-top: 10px;
+      font-size: 2vh; }
   .modalDialog > div {
     width: 400px;
     position: relative;
@@ -199,5 +190,8 @@ body {
     font-size: 14px; }
   body .wrapper .modalDialog > div {
     width: 75%; } }
+@media only screen and (min-width: 768px) {
+  .modalDialog > div {
+    height: 70%; } }
 
 /*# sourceMappingURL=style.css.map */
