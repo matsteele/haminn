@@ -76,6 +76,11 @@ body {
           fill: #EC008C; }
           body .wrapper #rooms svg .roomSVGs:hover {
             fill: blue; }
+      body .wrapper #rooms #inquiryBox {
+        background-color: #9EA5AB;
+        height: 40px;
+        width: 100px;
+        padding: 20px; }
     body .wrapper #about {
       width: 100%;
       margin-top: 40px;
@@ -105,6 +110,16 @@ body {
       background-color: #FFE9E2;
       width: 100%;
       font-size: 10px; }
+
+#InquiryMod div {
+  width: 80%;
+  height: 60%; }
+  #InquiryMod div iframe {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; }
+    #InquiryMod div iframe #document html body .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewFormBanner {
+      background-color: blue !important; }
 
 .modalDialog {
   position: fixed;

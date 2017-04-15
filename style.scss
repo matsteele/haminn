@@ -107,6 +107,14 @@ body {
 					}
 				}
 			}
+			#inquiryBox {
+				background-color: #9EA5AB;
+				height: 40px;
+				width: 100px;
+				// position: absolute;
+				padding: 20px;
+
+			}
 		}
 
 
@@ -153,6 +161,34 @@ body {
 
 // Modal Styles
 
+
+#InquiryMod {
+	div {
+		width: 80%;
+		height: 60%;
+		iframe {
+			width: 100%;
+			height: 100%;
+			margin: 0 auto;
+
+			#document {
+				html {
+					body {
+						.freebirdFormviewerViewFormContentWrapper {
+							.freebirdFormviewerViewFormBanner{
+								background-color: blue !important;
+							}
+						}
+					}
+				}
+			}
+
+
+		}
+
+	}
+}
+
 .modalDialog {
 	position: fixed;
 	font-family: Arial, Helvetica, sans-serif;
@@ -198,6 +234,7 @@ body {
     		}
     	}
 		.close {
+
 			background: #606061;
 			color: #FFFFFF;
 			line-height: 25px;
@@ -252,4 +289,3 @@ body {
 		}
 	}
 }
-
