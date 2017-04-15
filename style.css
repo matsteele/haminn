@@ -52,8 +52,8 @@ body {
       margin-top: 40px;
       width: 70%; }
       body .wrapper #rooms .roomsTitle {
-        background-color: #b5d7e1;
-        color: white;
+        background-color: #white;
+        color: 778D94;
         width: 10vh;
         font-size: 16px; }
       body .wrapper #rooms #rightRoomMod {
@@ -61,10 +61,6 @@ body {
         background-color: #9EA5AB;
         width: 300px;
         padding: 20px; }
-        body .wrapper #rooms #rightRoomMod #roomName {
-          color: white; }
-        body .wrapper #rooms #rightRoomMod #roomSummary {
-          color: #DFFFF7; }
         body .wrapper #rooms #rightRoomMod #Price4_1 {
           color: white;
           font-size: 20px; }
@@ -72,15 +68,24 @@ body {
         position: absolute;
         width: 70%; }
         body .wrapper #rooms svg .roomSVGs {
-          opacity: 0.3;
-          fill: #EC008C; }
+          opacity: 0.4;
+          position: absolute;
+          fill: #FF6BE2; }
           body .wrapper #rooms svg .roomSVGs:hover {
-            fill: blue; }
+            fill: #b5d7e1; }
       body .wrapper #rooms #inquiryBox {
-        background-color: #9EA5AB;
+        background-color: #b5d7e1;
         height: 40px;
         width: 100px;
-        padding: 20px; }
+        position: relative;
+        bottom: 80px;
+        left: -60px;
+        padding: 20px;
+        padding-bottom: 40px; }
+        body .wrapper #rooms #inquiryBox p {
+          font-family: sans-serif;
+          color: white;
+          padding-bottom: 30px; }
     body .wrapper #about {
       width: 100%;
       margin-top: 40px;
@@ -118,8 +123,9 @@ body {
     width: 100%;
     height: 100%;
     margin: 0 auto; }
-    #InquiryMod div iframe #document html body .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewFormBanner {
-      background-color: blue !important; }
+
+.close {
+  position: fixed; }
 
 .modalDialog {
   position: fixed;
@@ -165,7 +171,7 @@ body {
       background: #606061;
       color: #FFFFFF;
       line-height: 25px;
-      position: absolute;
+      position: fixed;
       right: 4px;
       text-align: center;
       top: 4px;
