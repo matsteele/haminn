@@ -72,8 +72,8 @@ body {
 			margin-top: 40px;
 			width: 70%;
 			.roomsTitle {
-				background-color: rgb(181, 215, 225);
-				color: white;
+				background-color: #white;
+				color: 778D94;
 				width: 10vh;
 				font-size: 16px;
 			}
@@ -83,13 +83,6 @@ body {
 				// height: 500px;
 				width: 300px;
 				padding:20px;
-				#roomName {
-					color: white;
-				}
-
-				#roomSummary{
-					color: #DFFFF7;
-				}
 
 				#Price4_1{
 					color: white;
@@ -100,19 +93,30 @@ body {
 				position: absolute;
 				width: 70%;
 				.roomSVGs{
-					opacity: 0.3;
-					fill: #EC008C;
+					opacity: 0.4;
+					position:absolute;
+					fill: #FF6BE2;
 					&:hover {
-						fill: blue;
+						fill: rgb(181, 215, 225);
 					}
 				}
 			}
 			#inquiryBox {
-				background-color: #9EA5AB;
+				background-color: rgb(181, 215, 225);
 				height: 40px;
 				width: 100px;
-				// position: absolute;
+				position: relative;
+				bottom: 80px;
+				left: -60px;
+
+
 				padding: 20px;
+				padding-bottom: 40px;
+				p {
+					font-family: sans-serif;
+					color: white;
+					padding-bottom: 30px;
+				}
 
 			}
 		}
@@ -171,22 +175,14 @@ body {
 			height: 100%;
 			margin: 0 auto;
 
-			#document {
-				html {
-					body {
-						.freebirdFormviewerViewFormContentWrapper {
-							.freebirdFormviewerViewFormBanner{
-								background-color: blue !important;
-							}
-						}
-					}
-				}
-			}
-
 
 		}
 
 	}
+}
+
+.close{
+	position: fixed;
 }
 
 .modalDialog {
@@ -238,7 +234,7 @@ body {
 			background: #606061;
 			color: #FFFFFF;
 			line-height: 25px;
-			position: absolute;
+			position: fixed;
 			right: 4px;
 			text-align: center;
 			top: 4px;
