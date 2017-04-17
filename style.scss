@@ -20,7 +20,6 @@ body {
 			z-index: 999;
 			.aboutNav {
 				font-size: 20px;
-
 				background-color: rgb(181, 215, 225);
 				margin: 45px 20px 0px 20px;
 				width: 9vh;
@@ -101,23 +100,36 @@ body {
 					}
 				}
 			}
-			#inquiryBox {
-				background-color: rgb(181, 215, 225);
-				height: 40px;
-				width: 100px;
-				position: relative;
-				bottom: 80px;
-				left: -60px;
-
-
-				padding: 20px;
-				padding-bottom: 40px;
-				p {
-					font-family: sans-serif;
-					color: white;
-					padding-bottom: 30px;
+			a {
+				text-decoration: none;
+				#inquiryBox {
+					background-color: rgb(181, 215, 225);
+					// height: 40px;
+					width: 100px;
+					height: 50px;
+					position: relative;
+					bottom: 8vh;
+					// left: -60px;
+					// margin-left: 20px;
+					padding: 20px;
+					padding-bottom: 40px;
+					border-radius: 50%;
+					&:hover {
+						background-color: #FF6BE2;
+						opacity: 0.5;
+						color: black;
+					}
+					p {
+	 					font-family: 'Open Sans Condensed', sans-serif;
+	 					text-align: center;
+						color: white;
+						padding-bottom: 30px;
+						&:hover {
+							color: black;
+							font-weight: bold;
+						}
+					}
 				}
-
 			}
 		}
 
@@ -230,25 +242,27 @@ body {
     		}
     	}
 		.close {
-
-			background: #606061;
+			background: #FF6BE2;
 			color: #FFFFFF;
-			line-height: 25px;
+			line-height: 50px;
 			position: fixed;
 			right: 4px;
 			text-align: center;
 			top: 4px;
-			width: 24px;
+			font-size: 50px;
+			width: 50px;
+			height: 50px;
 			text-decoration: none;
 			font-weight: bold;
-			-webkit-border-radius: 12px;
-			-moz-border-radius: 12px;
-			border-radius: 12px;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
 			-moz-box-shadow: 1px 1px 3px #000;
 			-webkit-box-shadow: 1px 1px 3px #000;
 			box-shadow: 1px 1px 3px #000;
 			&:hover {
-		 		background: black;
+		 		background: rgb(181, 215, 225);
+		 		color: black;
 		  	}
 	  	}
   	}
@@ -279,6 +293,23 @@ body {
 }
 
 @media only screen and (min-width:768px) {
+	body {
+		.wrapper {
+			#rooms {
+				a {
+					#inquiryBox {
+						width: 200px;
+						height: 100px;
+						font-size: 30px;
+						bottom: 20vh;
+						p {
+							padding-top: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
 	.modalDialog {
 		& > div {
 			height: 70%;

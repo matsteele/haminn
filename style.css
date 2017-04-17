@@ -73,19 +73,29 @@ body {
           fill: #FF6BE2; }
           body .wrapper #rooms svg .roomSVGs:hover {
             fill: #b5d7e1; }
-      body .wrapper #rooms #inquiryBox {
-        background-color: #b5d7e1;
-        height: 40px;
-        width: 100px;
-        position: relative;
-        bottom: 80px;
-        left: -60px;
-        padding: 20px;
-        padding-bottom: 40px; }
-        body .wrapper #rooms #inquiryBox p {
-          font-family: sans-serif;
-          color: white;
-          padding-bottom: 30px; }
+      body .wrapper #rooms a {
+        text-decoration: none; }
+        body .wrapper #rooms a #inquiryBox {
+          background-color: #b5d7e1;
+          width: 100px;
+          height: 50px;
+          position: relative;
+          bottom: 8vh;
+          padding: 20px;
+          padding-bottom: 40px;
+          border-radius: 50%; }
+          body .wrapper #rooms a #inquiryBox:hover {
+            background-color: #FF6BE2;
+            opacity: 0.5;
+            color: black; }
+          body .wrapper #rooms a #inquiryBox p {
+            font-family: 'Open Sans Condensed', sans-serif;
+            text-align: center;
+            color: white;
+            padding-bottom: 30px; }
+            body .wrapper #rooms a #inquiryBox p:hover {
+              color: black;
+              font-weight: bold; }
     body .wrapper #about {
       width: 100%;
       margin-top: 40px;
@@ -165,24 +175,27 @@ body {
       .modalDialog > div p span:first-child {
         font-weight: bolder; }
     .modalDialog > div .close {
-      background: #606061;
+      background: #FF6BE2;
       color: #FFFFFF;
-      line-height: 25px;
+      line-height: 50px;
       position: fixed;
       right: 4px;
       text-align: center;
       top: 4px;
-      width: 24px;
+      font-size: 50px;
+      width: 50px;
+      height: 50px;
       text-decoration: none;
       font-weight: bold;
-      -webkit-border-radius: 12px;
-      -moz-border-radius: 12px;
-      border-radius: 12px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
       -moz-box-shadow: 1px 1px 3px #000;
       -webkit-box-shadow: 1px 1px 3px #000;
       box-shadow: 1px 1px 3px #000; }
       .modalDialog > div .close:hover {
-        background: black; }
+        background: #b5d7e1;
+        color: black; }
 
 @media only screen and (max-width: 768px) {
   body .wrapper nav .aboutNav {
@@ -194,6 +207,14 @@ body {
   body .wrapper .modalDialog > div {
     width: 75%; } }
 @media only screen and (min-width: 768px) {
+  body .wrapper #rooms a #inquiryBox {
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+    bottom: 20vh; }
+    body .wrapper #rooms a #inquiryBox p {
+      padding-top: 10px; }
+
   .modalDialog > div {
     height: 70%; } }
 
