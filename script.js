@@ -1,11 +1,12 @@
-$(document).ready(function(){
-    // $("#openModal1").click( function() {
-    //     if (!$("#openModal1>div").is(":hover")) document.location.href='#';
-    // });
+// $(document).ready(function(){
+// 	 $('#fourOne').click(function(){
+// 	   $("#openRoom4_1").modal();
 
 // $('#openModal1').bind('click', function(event){
 //     if (event.target == $('#openModal1').get(0))
 //         overlay();
 // });
-
-});
+// 
+// });
+// // 	});
+// // });
