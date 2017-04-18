@@ -49,22 +49,27 @@ body {
         margin: 0 auto;
         width: 100%; }
     body .wrapper #rooms {
-      margin-left: 15%;
-      margin-top: 40px;
-      width: 70%; }
+      margin-top: 40px; }
       body .wrapper #rooms .roomsTitle {
         background-color: white;
         width: 10vh;
         font-size: 20px; }
-      body .wrapper #rooms svg {
-        position: absolute;
-        width: 70%; }
-        body .wrapper #rooms svg .roomSVGs {
-          opacity: 0.4;
+      body .wrapper #rooms object {
+        width: 70%;
+        margin: auto;
+        display: block;
+        height: auto;
+        position: relative; }
+        body .wrapper #rooms object svg {
           position: absolute;
-          fill: #FF6BE2; }
-          body .wrapper #rooms svg .roomSVGs:hover {
-            fill: #b5d7e1; }
+          width: 100%;
+          height: 100%; }
+          body .wrapper #rooms object svg .roomSVGs {
+            opacity: 0.4;
+            position: absolute;
+            fill: #FF6BE2; }
+            body .wrapper #rooms object svg .roomSVGs:hover {
+              fill: #b5d7e1; }
       body .wrapper #rooms a {
         text-decoration: none; }
         body .wrapper #rooms a #inquiryBox {
