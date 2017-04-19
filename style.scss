@@ -1,6 +1,5 @@
 body {
 	 font-family: 'Open Sans Condensed', sans-serif !important;
-	 // background-color: #ccc !important;
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -8,56 +7,21 @@ body {
 		flex: 1;
 		nav {
 			text-align: center;
-			font-size: 10vh;
-			background-color: #FFE9E2;
-			position: fixed !important;
-			width: 100%;
-			// height: 100px;
-			// margin: 0 auto !important;
-			padding-bottom: 10px;
-			margin-top: -20px !important;
-			// margin-top: -30px;
+			background-color: transparent;
+			position: absolute;
+			margin-top: 26%;
+			width: 70%;
 			z-index: 999;
-			box-shadow: 1px 1px 1px grey;
-			.aboutNav {
-				font-size: 20px;
-				background-color: rgb(181, 215, 225);
-				margin: 45px 20px 0px 20px;
-				width: 9vh;
-				padding: 10px;
-				a {
-					text-decoration: none;
-					color: white;
-					&:hover {
-						color: black;
-					}
-				}
-			}
 			.title {
 				text-align: center;
 				font-size: 35px;
-				letter-spacing: 2px;
+				letter-spacing: 10px;
 				font-weight: lighter;
-			}
-			.roomsNav {
-				font-size: 20px;
-				padding: 10px;
-
-				background-color: rgb(181, 215, 225);
 				color: white;
-				margin: 45px 20px 0px 20px;
-				width: 9vh;
-				a {
-					text-decoration: none;
-					color: white;
-					&:hover {
-						color: black;
-					}
-				}
 			}
 		}
 		.mainCarousel {
-			margin-top: 75px;
+			margin-top: -75px;
 			.item {
 				img {
 					margin: 0 auto;
@@ -66,14 +30,24 @@ body {
 			}
 		}
 		#rooms {
-			// margin-left: 15%;
 			margin-top: 40px;
-			// width: 70%;
-			// height: 100%;
-			.roomsTitle {
-				background-color: white;
-				width: 10vh;
-				font-size: 20px;
+			.background {
+			    position: relative;
+			    z-index: 1;
+			    font-size: 20px;
+			    &:before {
+			    	border-top: 1px solid #dfdfdf;
+			        content:"";
+			        margin: 0 auto;
+			        position: absolute;
+			        top: 50%; left: 0; right: 0; bottom: 0;
+			        width: 80%;
+			        z-index: -1;
+			    }
+			    span {
+			    	background: #fff; 
+        			padding: 0 15px; 
+			    }
 			}
 			object {
 				width: 70%;
@@ -111,6 +85,7 @@ body {
 					padding-bottom: 40px;
 					border-radius: 50%;
 					float: left;
+					border: 1px solid black;
 					// margin: 0;
 					&:hover {
 						background-color: rgb(246,187,234);
@@ -139,19 +114,25 @@ body {
 				display: inline-block;
 				margin: 0;
 				width: 100%;
-				.aboutTitle {
-					// margin-bottom: 5px;
-					// background-color: white;
-					// width: 10vh;
-					font-size: 20px;
-				}
-				hr {
-					width: 80%;
-					margin-top: -4px;
-					margin-bottom: -6px;
+				.background {
+				    position: relative;
+				    z-index: 1;
+				    font-size: 20px;
+				    &:before {
+				    	border-top: 1px solid #dfdfdf;
+				        content:"";
+				        margin: 0 auto;
+				        position: absolute;
+				        top: 50%; left: 0; right: 0; bottom: 0;
+				        width: 80%;
+				        z-index: -1;
+				    }
+				    span {
+				    	background: #fff; 
+	        			padding: 0 15px; 
+				    }
 				}
 				.aboutText {
-					// background-color: rgb(181, 215, 225);
 					border: 1px solid #FFFFFF;
 					border-radius: 5px;
 					text-decoration: none;
@@ -210,7 +191,7 @@ body {
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
 	pointer-events: none;
-	font-family: 'Open Sans Condensed';
+	font-family: 'Open Sans Condensed', sans-serif;
 	&:target {
 		opacity: 1;
 		pointer-events: auto;
@@ -279,14 +260,8 @@ body {
 	body {
 		.wrapper {
 			nav {
-				.aboutNav {
-					font-size: 14px;
-				}
 				.title {
 					font-size: 16px;
-				}
-				.roomsNav {
-					font-size: 14px;
 				}
 			}
 			.modalDialog {
@@ -302,6 +277,9 @@ body {
 	body {
 		.wrapper {
 			#rooms {
+				.background {
+					font-size: 30px;
+				}
 				a {
 					#inquiryBox {
 						width: 100px;
@@ -311,6 +289,13 @@ body {
 						p {
 							padding-top: 10px;
 						}
+					}
+				}
+			}
+			#about {
+				.aboutSection {
+					.background {
+						font-size: 30px;
 					}
 				}
 			}

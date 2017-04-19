@@ -7,53 +7,42 @@ body {
     flex: 1; }
     body .wrapper nav {
       text-align: center;
-      font-size: 10vh;
-      background-color: #FFE9E2;
-      position: fixed !important;
+      background-color: transparent;
+      position: absolute;
+      margin-top: 26%;
       width: 100%;
-      padding-bottom: 10px;
-      margin-top: -20px !important;
-      z-index: 999;
-      box-shadow: 1px 1px 1px grey; }
-      body .wrapper nav .aboutNav {
-        font-size: 20px;
-        background-color: #b5d7e1;
-        margin: 45px 20px 0px 20px;
-        width: 9vh;
-        padding: 10px; }
-        body .wrapper nav .aboutNav a {
-          text-decoration: none;
-          color: white; }
-          body .wrapper nav .aboutNav a:hover {
-            color: black; }
+      z-index: 999; }
       body .wrapper nav .title {
         text-align: center;
         font-size: 35px;
-        letter-spacing: 2px;
-        font-weight: lighter; }
-      body .wrapper nav .roomsNav {
-        font-size: 20px;
-        padding: 10px;
-        background-color: #b5d7e1;
-        color: white;
-        margin: 45px 20px 0px 20px;
-        width: 9vh; }
-        body .wrapper nav .roomsNav a {
-          text-decoration: none;
-          color: white; }
-          body .wrapper nav .roomsNav a:hover {
-            color: black; }
+        letter-spacing: 10px;
+        font-weight: lighter;
+        color: white; }
     body .wrapper .mainCarousel {
-      margin-top: 75px; }
+      margin-top: -75px; }
       body .wrapper .mainCarousel .item img {
         margin: 0 auto;
         width: 100%; }
     body .wrapper #rooms {
       margin-top: 40px; }
-      body .wrapper #rooms .roomsTitle {
-        background-color: white;
-        width: 10vh;
+      body .wrapper #rooms .background {
+        position: relative;
+        z-index: 1;
         font-size: 20px; }
+        body .wrapper #rooms .background:before {
+          border-top: 1px solid #dfdfdf;
+          content: "";
+          margin: 0 auto;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 80%;
+          z-index: -1; }
+        body .wrapper #rooms .background span {
+          background: #fff;
+          padding: 0 15px; }
       body .wrapper #rooms object {
         width: 70%;
         margin: auto;
@@ -81,7 +70,8 @@ body {
           padding-top: 20px;
           padding-bottom: 40px;
           border-radius: 50%;
-          float: left; }
+          float: left;
+          border: 1px solid black; }
           body .wrapper #rooms a #inquiryBox:hover {
             background-color: #f6bbea;
             color: black; }
@@ -100,12 +90,24 @@ body {
         display: inline-block;
         margin: 0;
         width: 100%; }
-        body .wrapper #about .aboutSection .aboutTitle {
+        body .wrapper #about .aboutSection .background {
+          position: relative;
+          z-index: 1;
           font-size: 20px; }
-        body .wrapper #about .aboutSection hr {
-          width: 80%;
-          margin-top: -4px;
-          margin-bottom: -6px; }
+          body .wrapper #about .aboutSection .background:before {
+            border-top: 1px solid #dfdfdf;
+            content: "";
+            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 80%;
+            z-index: -1; }
+          body .wrapper #about .aboutSection .background span {
+            background: #fff;
+            padding: 0 15px; }
         body .wrapper #about .aboutSection .aboutText {
           border: 1px solid #FFFFFF;
           border-radius: 5px;
@@ -149,7 +151,7 @@ body {
   -moz-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in;
   pointer-events: none;
-  font-family: 'Open Sans Condensed'; }
+  font-family: 'Open Sans Condensed', sans-serif; }
   .modalDialog:target {
     opacity: 1;
     pointer-events: auto; }
@@ -202,15 +204,13 @@ body {
         color: black; }
 
 @media only screen and (max-width: 768px) {
-  body .wrapper nav .aboutNav {
-    font-size: 14px; }
   body .wrapper nav .title {
     font-size: 16px; }
-  body .wrapper nav .roomsNav {
-    font-size: 14px; }
   body .wrapper .modalDialog > div {
     width: 75%; } }
 @media only screen and (min-width: 768px) {
+  body .wrapper #rooms .background {
+    font-size: 30px; }
   body .wrapper #rooms a #inquiryBox {
     width: 100px;
     height: 100px;
@@ -218,6 +218,8 @@ body {
     bottom: 20vh; }
     body .wrapper #rooms a #inquiryBox p {
       padding-top: 10px; }
+  body .wrapper #about .aboutSection .background {
+    font-size: 30px; }
 
   .modalDialog > div {
     height: 70%;
