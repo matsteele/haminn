@@ -10,7 +10,7 @@ body {
       background-color: transparent;
       position: absolute;
       margin-top: 26%;
-      width: 100%;
+      width: 70%;
       z-index: 999; }
       body .wrapper nav .title {
         text-align: center;
@@ -71,7 +71,7 @@ body {
           padding-bottom: 40px;
           border-radius: 50%;
           float: left;
-          border: 1px solid black; }
+          border: 1px solid lightgrey; }
           body .wrapper #rooms a #inquiryBox:hover {
             background-color: #f6bbea;
             color: black; }
