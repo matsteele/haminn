@@ -25,17 +25,4 @@ $(document).ready(function(){
      console.log(link);
       $(location).attr('href', link);
     });
-	});
-
-
-
-
-
-// });
-
-//
-// var  triangle = document.getElementById("fourOne");
-//
-// triangle.addEventListener('click', function() {
-//     $('#openRoom4_1').;
-// });
+ });
