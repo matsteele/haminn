@@ -1,12 +1,20 @@
-// $(document).ready(function(){
-// 	 $('#fourOne').click(function(){
-// 	   $("#openRoom4_1").modal();
+// var rooms = ["4_1", "4_2", "4_3", "3_2", "2_2", "1_2", "1_1", "den"];
 
-// $('#openModal1').bind('click', function(event){
-//     if (event.target == $('#openModal1').get(0))
-//         overlay();
-// });
-// 
-// });
-// // 	});
-// // });
+// var open = ["4_1", "4_2", "4_3", "3_2", "2_2", "1_2", "1_1", "0"];
+
+
+
+// for (var i = 0; i < open.length; i++) {
+
+// 	var roomPoly = String("#" + rooms[i]);
+// 	var roomOpen = String("#openRoom" + open[i]);
+
+// 	$(roomPoly).click(function() {
+// 		$(location).attr('href', roomOpen);
+// 	});
+// };
+
+
+
+
+
