@@ -48,8 +48,8 @@ body {
 			        z-index: -1;
 			    }
 			    span {
-			    	background: #fff; 
-        			padding: 0 15px; 
+			    	background: #fff;
+        			padding: 0 15px;
 			    }
 			}
 			object {
@@ -89,7 +89,7 @@ body {
 					padding-bottom: 40px;
 					border-radius: 50%;
 					float: left;
-					border: 1px solid black;
+					border: 1px solid lightgrey;
 					// margin: 0;
 					&:hover {
 						background-color: rgb(246,187,234);
@@ -132,8 +132,8 @@ body {
 				        z-index: -1;
 				    }
 				    span {
-				    	background: #fff; 
-	        			padding: 0 15px; 
+				    	background: #fff;
+	        			padding: 0 15px;
 				    }
 				}
 				.aboutText {

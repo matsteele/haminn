@@ -75,7 +75,7 @@ body {
           padding-bottom: 40px;
           border-radius: 50%;
           float: left;
-          border: 1px solid black; }
+          border: 1px solid lightgrey; }
           body .wrapper #rooms a #inquiryBox:hover {
             background-color: #f6bbea;
             color: black; }
