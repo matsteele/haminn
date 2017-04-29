@@ -1,0 +1,369 @@
+body {
+	 font-family: 'Open Sans Condensed', sans-serif !important;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	.wrapper {
+		flex: 1;
+		header {
+			text-align: center;
+			background-color: transparent;
+			position: absolute;
+			margin-top: 26%;
+			width: 100%;
+			z-index: 999;
+			.title {
+				width: 70%;
+				margin: 0 auto;
+				padding: 0 auto;
+				text-align: center;
+				font-size: 35px;
+				letter-spacing: 10px;
+				font-weight: lighter;
+				color: white;
+			}
+		}
+		.mainCarousel {
+			margin-top: -75px;
+			.item {
+				img {
+					margin: 0 auto;
+    				width: 100%;
+				}
+			}
+		}
+		.contentWrapper {
+			display: flex;
+			flex-direction: row;
+			#rooms {
+				border-right: 1px solid #dfdfdf;
+				flex: 3;
+				margin-top: 40px;
+				h2 {
+					font-size: 21px;
+				}
+				object {
+					width: 70%;
+					margin: auto;
+					display: block;
+					height: auto;
+					position: relative;
+					svg {
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						display: block;
+						.roomSVGs{
+							opacity: 0.4;
+							position:absolute;
+							fill: #FF6BE2;
+							&:hover {
+								fill: rgb(181, 215, 225);
+							}
+						}
+					}
+				}
+				a {
+					text-decoration: none;
+					#inquiryBox {
+						background-color: #41CCC6;
+						// height: 40px;
+						width: 60px;
+						height: 50px;
+						position: relative;
+						bottom: 15vh;
+						// left: -60px;
+						// margin-left: 20px;
+						padding-top: 20px;
+						padding-bottom: 40px;
+						border-radius: 50%;
+						float: left;
+						border: 1px solid black;
+						// margin: 0;
+						&:hover {
+							background-color: rgb(246,187,234);
+							color: black;
+						}
+						p {
+		 					font-family: 'Open Sans Condensed', sans-serif;
+		 					text-align: center;
+							color: white;
+							padding-bottom: 30px;
+
+							&:hover {
+								color: black;
+							}
+						}
+					}
+				}
+			}
+
+
+			#about {
+				flex: 1;
+				// width: 100%;
+				margin-top: 40px;
+				margin-bottom: 20px;
+				.aboutSection {
+
+					// display: inline-block;
+					// margin: 0;
+					width: 100%;
+					h2 {
+						font-size: 21px;
+						margin-bottom: 10%;
+					}
+					.aboutText {
+						border: 1px solid #FFFFFF;
+						border-radius: 5px;
+						text-decoration: none;
+						color: black;
+						width: 75px;
+						padding: 25px;
+						padding-top: 10%;
+						display: block;
+						margin: 0 auto;
+						font-size: 20px;
+						&:hover {
+							cursor: pointer;
+							// font-size: 20px;
+							color: #41CCC6;
+						}
+						a {
+							// font-size: 14px;
+						}
+					}
+				}
+			}
+
+		}
+	}
+	footer {
+		// background-color: #FFE9E2;
+		width: 100%;
+		// font-size: 5px;
+		ul {
+			li {
+				a {
+					i {
+						color: grey;
+						&:hover {
+							color: #41CCC6;
+						}
+					}
+				}
+			}
+		}
+		p {
+			font-size: 8px;
+		}
+	}
+}
+
+// Modal Styles
+
+
+#InquiryMod {
+	div {
+		width: 80%;
+		height: 60%;
+		iframe {
+			width: 100%;
+			height: 100%;
+			margin: 0 auto;
+		}
+	}
+}
+
+.close{
+	position: fixed;
+}
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 99999;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	font-family: 'Open Sans Condensed', sans-serif;
+	&:target {
+		opacity: 1;
+		pointer-events: auto;
+  	}
+  	& > .roomModal {
+  		background: white;
+  		p {
+  			margin-top: 10px;
+  			font-size: 2vh;
+  		}
+  	}
+	& > div {
+		width: 400px;
+		position: relative;
+		margin: 10% auto;
+		padding: 5px 20px 13px 20px;
+		border-radius: 10px;
+	 	max-height: calc(100vh - 110px);
+    	overflow: auto;
+    	margin-bottom: 20px;
+    	background: white;
+    	.narrowPic {
+    		float: right;
+    		width: 50%;
+    		height: auto;
+    		padding-left: 10px;
+    		padding-bottom: 10px;
+    	}
+    	p {
+    		span {
+    			display: block;
+    			&:first-child {
+    				font-weight: bolder;
+    			}
+    		}
+    	}
+		.close {
+			background: #FF6BE2;
+			color: #FFFFFF;
+			line-height: 50px;
+			position: fixed;
+			right: 4px;
+			text-align: center;
+			top: 4px;
+			font-size: 50px;
+			width: 50px;
+			height: 50px;
+			text-decoration: none;
+			font-weight: bold;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+			-moz-box-shadow: 1px 1px 3px #000;
+			-webkit-box-shadow: 1px 1px 3px #000;
+			box-shadow: 1px 1px 3px #000;
+			&:hover {
+		 		background: rgb(181, 215, 225);
+		 		color: black;
+		  	}
+	  	}
+  	}
+}
+
+
+@media only screen and (max-width:768px) {
+	body {
+		.wrapper {
+			header {
+				.title {
+					font-size: 16px;
+				}
+			}
+			.contentWrapper {
+				#about {
+					.aboutSection {
+						.aboutText {
+							font-size: 14px;
+							&:hover {
+
+							}
+						}
+					}
+				}
+			}
+			.modalDialog {
+				& > div {
+					width: 75%;
+				}
+			}
+		}
+		footer {
+			p {
+				font-size: 10px;
+			}
+
+		}
+	}
+}
+
+@media only screen and (max-width:768px) {
+	body {
+		.wrapper {
+			.contentWrapper {
+				#rooms {
+					a {
+						#inquiryBox {
+							width: 60px;
+							height: 50px;
+							font-size: 14px;
+							bottom: 10vh;
+							right: 2vh;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width:768px) {
+	body {
+		.wrapper {
+			.contentWrapper {
+				#rooms {
+					a {
+						#inquiryBox {
+							width: 100px;
+							height: 100px;
+							font-size: 28px;
+							bottom: 20vh;
+							p {
+								padding-top: 10px;
+							}
+						}
+					}
+				}
+				#about {
+					.aboutSection {
+					}
+				}
+			}
+		}
+	}
+	.modalDialog {
+		& > div {
+			height: 70%;
+			width: 45%;
+		}
+	}
+}
+
+@media only screen and (min-width:1078px) {
+	body {
+		.wrapper {
+			.contentWrapper {
+				#rooms {
+					a {
+						#inquiryBox {
+							width: 145px;
+							height: 145px;
+							font-size: 28px;
+							bottom: 30vh;
+							padding-top: 40px;
+						}
+					}
+				}
+				#about {
+					flex: 2;
+				}
+			}
+		}
+	}
+}

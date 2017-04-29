@@ -16,13 +16,10 @@
 
 
 $(document).ready(function(){
-	 $('.roomSVGs').click(function(){
-    var id = $(this).attr('class');
-    console.log(id);
-    IDArray = id.split(" ");
-    console.log(IDArray[0]);
-     var link = 'index.html#' + IDArray[0];
-     console.log(link);
-      $(location).attr('href', link);
+	$('.roomSVGs').click(function(){
+		var id = $(this).attr('class');
+		IDArray = id.split(" ");
+		var link = 'index.html#' + IDArray[0];
+		$(location).attr('href', link);
     });
  });
