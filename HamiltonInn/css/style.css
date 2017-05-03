@@ -28,7 +28,30 @@ body {
         width: 100%; }
     body .wrapper .contentWrapper {
       display: flex;
-      flex-direction: row; }
+      flex-direction: row-reverse; }
+      body .wrapper .contentWrapper #about {
+        flex: 1;
+        margin-top: 40px;
+        margin-bottom: 20px; }
+        body .wrapper .contentWrapper #about .aboutSection {
+          width: 100%; }
+          body .wrapper .contentWrapper #about .aboutSection h2 {
+            font-size: 21px;
+            margin-bottom: 10%; }
+          body .wrapper .contentWrapper #about .aboutSection .aboutText {
+            border: 1px solid #FFFFFF;
+            border-radius: 5px;
+            text-decoration: none;
+            color: black;
+            width: 75px;
+            padding: 25px;
+            padding-top: 10%;
+            display: block;
+            margin: 0 auto;
+            font-size: 20px; }
+            body .wrapper .contentWrapper #about .aboutSection .aboutText:hover {
+              cursor: pointer;
+              color: #41CCC6; }
       body .wrapper .contentWrapper #rooms {
         border-right: 1px solid #dfdfdf;
         flex: 3;
@@ -75,29 +98,6 @@ body {
               padding-bottom: 30px; }
               body .wrapper .contentWrapper #rooms a #inquiryBox p:hover {
                 color: black; }
-      body .wrapper .contentWrapper #about {
-        flex: 1;
-        margin-top: 40px;
-        margin-bottom: 20px; }
-        body .wrapper .contentWrapper #about .aboutSection {
-          width: 100%; }
-          body .wrapper .contentWrapper #about .aboutSection h2 {
-            font-size: 21px;
-            margin-bottom: 10%; }
-          body .wrapper .contentWrapper #about .aboutSection .aboutText {
-            border: 1px solid #FFFFFF;
-            border-radius: 5px;
-            text-decoration: none;
-            color: black;
-            width: 75px;
-            padding: 25px;
-            padding-top: 10%;
-            display: block;
-            margin: 0 auto;
-            font-size: 20px; }
-            body .wrapper .contentWrapper #about .aboutSection .aboutText:hover {
-              cursor: pointer;
-              color: #41CCC6; }
   body footer {
     width: 100%; }
     body footer ul li a i {
@@ -193,13 +193,26 @@ body {
     width: 75%; }
   body footer p {
     font-size: 10px; } }
-@media only screen and (max-width: 768px) {
-  body .wrapper .contentWrapper #rooms a #inquiryBox {
-    width: 60px;
-    height: 50px;
-    font-size: 14px;
-    bottom: 10vh;
-    right: 2vh; } }
+@media only screen and (max-width: 500px) {
+  body .wrapper .contentWrapper {
+    display: block !important; }
+    body .wrapper .contentWrapper #rooms a #inquiryBox {
+      width: 60px;
+      height: 50px;
+      font-size: 14px;
+      bottom: 10vh;
+      right: 2vh; }
+    body .wrapper .contentWrapper #about {
+      border-bottom: 1px solid #dfdfdf;
+      width: 80%;
+      margin: 0 auto; }
+      body .wrapper .contentWrapper #about .aboutSection {
+        margin: 0 auto;
+        display: inline-block; }
+        body .wrapper .contentWrapper #about .aboutSection .aboutText {
+          display: inline-block;
+          padding-top: 0px;
+          margin-top: -2%; } }
 @media only screen and (min-width: 768px) {
   body .wrapper .contentWrapper #rooms a #inquiryBox {
     width: 100px;
@@ -212,13 +225,13 @@ body {
   .modalDialog > div {
     height: 70%;
     width: 45%; } }
-@media only screen and (min-width: 1078px) {
+@media only screen and (min-width: 1200px) {
   body .wrapper .contentWrapper #rooms a #inquiryBox {
-    width: 145px;
-    height: 145px;
+    width: 130px;
+    height: 130px;
     font-size: 28px;
     bottom: 30vh;
-    padding-top: 40px; }
+    padding-top: 32px; }
   body .wrapper .contentWrapper #about {
     flex: 2; } }
 
