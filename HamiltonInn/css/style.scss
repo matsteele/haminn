@@ -34,46 +34,44 @@ body {
 		}
 		.contentWrapper {
 			display: flex;
-			flex-direction: row-reverse;
-
+			flex-direction: row;
 			#about {
 				flex: 1;
-				// width: 100%;
 				margin-top: 40px;
 				margin-bottom: 20px;
 				.aboutSection {
-
-					// display: inline-block;
-					// margin: 0;
 					width: 100%;
 					h2 {
 						font-size: 21px;
 						margin-bottom: 10%;
 					}
-					.aboutText {
-						border: 1px solid #FFFFFF;
-						border-radius: 5px;
-						text-decoration: none;
-						color: black;
-						width: 75px;
-						padding: 25px;
-						padding-top: 10%;
-						display: block;
-						margin: 0 auto;
-						font-size: 20px;
-						&:hover {
-							cursor: pointer;
-							// font-size: 20px;
-							color: #41CCC6;
-						}
-						a {
-							// font-size: 14px;
+					.aboutIcons {
+						margin-top: 20px;
+						.aboutText {
+							border: 1px solid #FFFFFF;
+							border-radius: 5px;
+							text-decoration: none;
+							color: black;
+							width: 75px;
+							padding: 25px;
+							padding-top: 10%;
+							display: block;
+							margin: 0 auto;
+							margin-top: 8%;
+							font-size: 20px;
+							&:first-child {
+								margin-top: 30px;
+							}
+							&:hover {
+								cursor: pointer;
+								color: #41CCC6;
+							}
 						}
 					}
 				}
 			}
 			#rooms {
-				border-right: 1px solid #dfdfdf;
+				border-left: 1px solid #dfdfdf;
 				flex: 3;
 				margin-top: 40px;
 				h2 {
@@ -91,6 +89,7 @@ body {
 						height: 100%;
 						display: block;
 						.roomSVGs{
+							cursor: pointer;
 							opacity: 0.4;
 							position:absolute;
 							fill: #FF6BE2;
@@ -102,21 +101,18 @@ body {
 				}
 				a {
 					text-decoration: none;
+					cursor: pointer;
 					#inquiryBox {
 						background-color: #41CCC6;
-						// height: 40px;
 						width: 60px;
 						height: 50px;
 						position: relative;
 						bottom: 15vh;
-						// left: -60px;
-						// margin-left: 20px;
 						padding-top: 20px;
 						padding-bottom: 40px;
 						border-radius: 50%;
 						float: left;
 						border: 1px solid black;
-						// margin: 0;
 						&:hover {
 							background-color: rgb(246,187,234);
 							color: black;
@@ -126,7 +122,6 @@ body {
 		 					text-align: center;
 							color: white;
 							padding-bottom: 30px;
-
 							&:hover {
 								color: black;
 							}
@@ -137,9 +132,7 @@ body {
 		}
 	}
 	footer {
-		// background-color: #FFE9E2;
 		width: 100%;
-		// font-size: 5px;
 		ul {
 			li {
 				a {
@@ -160,99 +153,42 @@ body {
 
 // Modal Styles
 
-
-#InquiryMod {
-	div {
-		width: 80%;
-		height: 60%;
-		iframe {
-			width: 100%;
-			height: 100%;
-			margin: 0 auto;
+.modal {
+	.modal-dialog {
+		.modal-content {
+			.modal-body {
+				.narrowPic {
+					float: right;
+					width: 50%;
+					height: auto;
+					padding-left: 10px;
+					padding-bottom: 10px;
+				}
+				p {
+					span {
+						display: block;
+						&:first-child {
+							font-weight: bolder;
+						}
+					}
+				}
+			}
 		}
 	}
 }
 
-.close{
-	position: fixed;
-}
+/// Inquiry Styles
 
-.modalDialog {
-	position: fixed;
-	font-family: Arial, Helvetica, sans-serif;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.8);
-	z-index: 99999;
-	opacity: 0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
-	font-family: 'Open Sans Condensed', sans-serif;
-	&:target {
-		opacity: 1;
-		pointer-events: auto;
-  	}
-  	& > .roomModal {
-  		background: white;
-  		p {
-  			margin-top: 10px;
-  			font-size: 2vh;
-  		}
-  	}
-	& > div {
-		width: 400px;
-		position: relative;
-		margin: 10% auto;
-		padding: 5px 20px 13px 20px;
-		border-radius: 10px;
-	 	max-height: calc(100vh - 110px);
-    	overflow: auto;
-    	margin-bottom: 20px;
-    	background: white;
-    	.narrowPic {
-    		float: right;
-    		width: 50%;
-    		height: auto;
-    		padding-left: 10px;
-    		padding-bottom: 10px;
-    	}
-    	p {
-    		span {
-    			display: block;
-    			&:first-child {
-    				font-weight: bolder;
-    			}
-    		}
-    	}
-		.close {
-			background: #FF6BE2;
-			color: #FFFFFF;
-			line-height: 50px;
-			position: fixed;
-			right: 4px;
-			text-align: center;
-			top: 4px;
-			font-size: 50px;
-			width: 50px;
-			height: 50px;
-			text-decoration: none;
-			font-weight: bold;
-			-webkit-border-radius: 50%;
-			-moz-border-radius: 50%;
-			border-radius: 50%;
-			-moz-box-shadow: 1px 1px 3px #000;
-			-webkit-box-shadow: 1px 1px 3px #000;
-			box-shadow: 1px 1px 3px #000;
-			&:hover {
-		 		background: rgb(181, 215, 225);
-		 		color: black;
-		  	}
-	  	}
-  	}
+
+#inquiryMod {
+	div {
+		iframe {
+			display: block;
+			width: 100%;
+			height: 1000px;
+			margin: 0 auto;
+		}
+	}
 }
 
 
@@ -288,15 +224,22 @@ body {
 			}
 
 		}
+		footer {
+			p {
+				font-size: 8px;
+			}
+		}
 	}
 }
 
 @media only screen and (max-width:500px) {
 	body {
 		.wrapper {
+			header {
+				margin-top: 19%;
+			}
 			.contentWrapper {
 				display: block !important;
-				// flex-direction: column;
 				#rooms {
 					a {
 						#inquiryBox {
@@ -316,12 +259,19 @@ body {
 						margin: 0 auto;
 						display: inline-block;
 						h2 {
-
+							margin-bottom: 0px;
 						}
-						.aboutText {
-							display: inline-block;
-							padding-top: 0px;
-							margin-top: -2%;
+						.aboutIcons {
+							margin: 0;
+							.aboutText {
+								font-size: 13px;
+								display: inline-block;
+								padding-top: 0px;
+								// padding: 0;
+								// margin: 0;
+								width: 50px;
+								margin-top: -2%;
+							}
 						}
 					}
 				}
@@ -347,17 +297,7 @@ body {
 						}
 					}
 				}
-				#about {
-					.aboutSection {
-					}
-				}
 			}
-		}
-	}
-	.modalDialog {
-		& > div {
-			height: 70%;
-			width: 45%;
 		}
 	}
 }
@@ -379,6 +319,21 @@ body {
 				}
 				#about {
 					flex: 2;
+					.aboutSection {
+						h2 {
+							margin-bottom: 6%;
+						}
+						.aboutIcons {
+							margin-top: 0px;
+							.aboutText {
+								font-size: 22px;
+								padding-top: 6%;
+								&:first-child {
+									margin-top: 0px;
+								}
+							}
+						}
+					}
 				}
 			}
 		}
