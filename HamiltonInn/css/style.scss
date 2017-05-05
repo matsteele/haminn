@@ -35,6 +35,11 @@ body {
 		.contentWrapper {
 			display: flex;
 			flex-direction: row;
+			// background: url(../images/door.jpg) no-repeat center center fixed; 
+			// -webkit-background-size: cover;
+			// -moz-background-size: cover;
+			// -o-background-size: cover;
+			// background-size: cover;
 			#about {
 				flex: 1;
 				margin-top: 40px;
