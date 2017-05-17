@@ -78,7 +78,8 @@ body {
               cursor: pointer;
               opacity: 0.4;
               position: absolute;
-              fill: #FF6BE2; }
+              fill: #FF6BE2;
+              z-index: 999; }
               body .wrapper .contentWrapper #rooms object svg .roomSVGs:hover {
                 fill: #b5d7e1; }
         body .wrapper .contentWrapper #rooms a {
