@@ -1,7 +1,10 @@
 // Pauses main carousel on modal click
 $('.modal').on('shown.bs.modal', function (e) {
     $('.mainCarousel').carousel('pause');
-}, function (e) {
+})
+
+// Return main carousel cycle on modal close
+$('.modal').on('hidden.bs.modal', function () {
 	$('.mainCarousel').carousel('cycle');
 })
 
