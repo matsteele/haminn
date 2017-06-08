@@ -1,7 +1,11 @@
+// Pauses main carousel on modal click
 $('.modal').on('shown.bs.modal', function (e) {
     $('.mainCarousel').carousel('pause');
+}, function (e) {
+	$('.mainCarousel').carousel('cycle');
 })
 
+// Create text over room svgs
 var textData = [
 	{"name": "4.1", "x": 775,	"y": 250},
 	{"name": "4.2", "x": 580, 	"y": 225},
@@ -19,13 +23,11 @@ svgContainer.selectAll("text")
 	.data(textData)
 	.enter()
 	.append("text")
+	.classed("room-text", true)
 	.text(function(d,i) { return d.name; })
 	.attr("x", function(d) {
 		return d.x;
 	})
 	.attr("y", function(d) {
 		return d.y;
-	})
-	.style("fill", "white")
-	.style("font-size", "40px")
-	.style("cursor", "pointer");
+	});
