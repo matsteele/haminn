@@ -140,6 +140,19 @@ body {
   display: block; }
   .modal .modal-dialog .modal-content .modal-body p span:first-child {
     font-weight: bolder; }
+.modal .modal-dialog .modal-content .contact-list {
+  list-style-type: none;
+  padding-left: 0px; }
+  .modal .modal-dialog .modal-content .contact-list li {
+    padding-bottom: 5px; }
+    .modal .modal-dialog .modal-content .contact-list li a {
+      text-decoration: none;
+      color: black;
+      padding: 6px;
+      border-radius: 5px; }
+      .modal .modal-dialog .modal-content .contact-list li a:hover {
+        background-color: #FF9AD6;
+        color: white; }
 
 #inquiryMod div iframe {
   display: block;
