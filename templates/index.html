@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<button id="customButton">Pay with Card</button>
+
+<script>
+var handler = StripeCheckout.configure({
+  key: 'pk_test_cY1y2cHnxJuzpQW3JtOfgrdd',
+  image: '/static/images/4-1/full.jpg',
+  locale: 'auto',
+  token: function(token) {
+    // You can access the token ID with `token.id`.
+    // Get the token ID to your server-side code for use.
+  }
+});
+
+document.getElementById('customButton').addEventListener('click', function(e) {
+  // Open Checkout with further options:
+  handler.open({
+    name: 'Hamilton Inn',
+    description: 'Room 4.1',
+    amount: 9500
+  });
+  e.preventDefault();
+});
+
+// Close Checkout on page navigation:
+window.addEventListener('popstate', function() {
+  handler.close();
+});
+</script>
+{% endblock %}
