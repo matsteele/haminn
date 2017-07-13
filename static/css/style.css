@@ -141,7 +141,7 @@ body {
   .modal .modal-dialog .modal-content .modal-body p span:first-child {
     font-weight: bolder; }
 .modal .modal-dialog .modal-content .modal-body #customButton {
-  background-color: blue; }
+  background-color: white; }
 .modal .modal-dialog .modal-content .contact-list {
   list-style-type: none;
   padding-left: 0px; }

@@ -1,3 +1,47 @@
+
+var roomSelected; 
+var roomPrice;
+
+$('#fourOne').on('mouseenter', function(){
+	roomSelected = "Room 4.1";
+	roomPrice = 9500;
+});
+
+$('#fourThree').on('mouseenter', function(){
+	roomSelected = "Room 4.3";
+	roomPrice = 9500;
+});
+
+$('#fourTwo').on('mouseenter', function(){
+	roomSelected = "Room 4.2";
+	roomPrice = 4000;
+});
+
+$('#threeTwo').on('mouseenter', function(){
+	roomSelected = "Room 3.2";
+	roomPrice = 10500;
+});
+
+$('#twoTwo').on('mouseenter', function(){
+	roomSelected = "Room 2.2";
+	roomPrice = 10000;
+});
+
+$('#oneOne').on('mouseenter', function(){
+	roomSelected = "Room 1.1";
+	roomPrice = 13500;
+});
+
+$('#oneTwo').on('mouseenter', function(){
+	roomSelected = "Room 1.2";
+	roomPrice = 11500;
+});
+
+$('#den').on('mouseenter', function(){
+	roomSelected = "Room Den";
+	roomPrice = 4000;
+});
+
 // Pauses main carousel on modal click
 $('.modal').on('shown.bs.modal', function (e) {
     $('.mainCarousel').carousel('pause');
@@ -34,3 +78,4 @@ svgContainer.selectAll("text")
 	.attr("y", function(d) {
 		return d.y;
 	});
+

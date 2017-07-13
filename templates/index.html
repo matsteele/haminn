@@ -1,8 +1,8 @@
 {% extends "layout.html" %}
 {% block content %}
-
-
 <button id="customButton">Pay with Card</button>
+
+
 
 <script>
 var handler = StripeCheckout.configure({
@@ -19,8 +19,8 @@ document.getElementById('customButton').addEventListener('click', function(e) {
   // Open Checkout with further options:
   handler.open({
     name: 'Hamilton Inn',
-    description: 'Room 4.1',
-    amount: 9500
+    description: roomSelected,
+    amount: roomPrice
   });
   e.preventDefault();
 });

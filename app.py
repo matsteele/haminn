@@ -29,10 +29,15 @@ def charge():
         customer=customer.id,
         amount=amount,
         currency='usd',
-        description='Room 4.1'
+        description='Room Booking'
     )
 
     return render_template('charge.html', amount=amount)
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+## Run Calendar settings
+
+
