@@ -79,3 +79,5 @@ svgContainer.selectAll("text")
 		return d.y;
 	});
 
+
+var matt = 0

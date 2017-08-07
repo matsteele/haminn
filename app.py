@@ -18,7 +18,7 @@ def index():
 @app.route('/charge', methods=['POST'])
 def charge():
     # Amount in cents
-    amount = 9500
+    amount = 9000
 
     customer = stripe.Customer.create(
         email='customer@example.com',
@@ -39,5 +39,10 @@ if __name__ == '__main__':
 
 
 ## Run Calendar settings
+
+#To run - run the following in terminal
+# PUBLISHABLE_KEY=pk_test_cY1y2cHnxJuzpQW3JtOfgrdd SECRET_KEY=sk_test_iFYwwPLaqzMek333OkvgNsfD python app.py
+
+
 
 
