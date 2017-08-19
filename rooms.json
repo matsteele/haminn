@@ -1,0 +1,83 @@
+var rooms = {
+  "fourOne": [
+     {
+       "image": "",
+       "description": "",
+       "amount": "",    
+     }
+  ],
+  "fourTwo": [
+     {
+       "sideHeader": "UPenn - Masters in Urban Planning",
+       "text": "I went to graduate school to pursue my interest in real estate development finance and urban economics. I developed skills in financial and economic modeling. These skills gave me insights into understanding and visualizing how markets shift and change in response to movements in demand, innovation, and planning. My academic track was public private development, which means I learned how to employ strategies and techniques that leverage private investment for infrastructure development and city building.",
+       "imgSrc": "images/mainProfile.jpg",
+       "pointSrc": "5",
+      "start": ["2012, 09", 50],
+      "end": ["2014,05",  50],
+     }
+  ],
+  "fourThree": [
+     {
+       "sideHeader": "UPenn - Masters in Data Science",
+       "text": "I was also admitted into a data science masters program at Penn. My data modeling and web development courses were my favorites. I became a wiz at R and Python and learned how to use every aspect of ArcGIS. My coursework involved advanced statistics and spatial statistics as well as design coursework for data visualizations.",
+       "imgSrc": "images/mainProfile.jpg",
+       "pointSrc": "2",
+      "start": ["2016,01", 50],
+      "end": ["2016,08",  50],
+     }
+  ],
+  "threeTwo": [
+     {
+       "sideHeader": "University of Washington",
+       "text": "While graduate school built my technical skills, my undergraduate studies honed my abstract skills. It was as an economics major that I was first exposed to corporate finance and broad economic theory. I was also accepted into an interdisciplinary program for intrinsically motivated students called Community and Environmental Planning (CEP). Every aspect of CEP was devised for and by students. The open-dialogue format of our classes cultivated my ability to think critically and argue compassionately. We built strong connections with our professors, who supported us to take on ambitious projects and engage meaningfully with city and university institutions.",
+       "imgSrc": "images/award-pics/CEP.jpg",
+       "pointSrc": "9",
+      "start": ["2005,09", 45],
+      "end": ["2010,08",  45],
+     }
+  ],
+  "twoTwo": [
+     {
+       "sideHeader": "Current Work",
+       "text": "I am on an extended break actively managing a number of investment projects, after moving to New York City in order to reflect and strategize about my next steps. ",
+       "imgSrc": "images/award-pics/mainProfile.jpg",
+         "pointSrc": "2",
+        "start": ["2014,09", 35],
+      "end": ["2016,06",  35],
+     }
+  ],
+  "oneOne": [
+     {
+       "sideHeader": "World Bank",
+       "text": "I coordinated the World Bank’s technical assistance program for urban planning in Indonesia.  In this work I hired and managed three teams of international and local planning consultants, reflecting contracts worth $500,000 USD. I projected budgets, established KPIs, and drafted the terms of reference and work plans for 29 consultants.  I helped five cities implement data systems. I also worked closely with local planning officials to use what data was available to conduct analysis on urban expansion, land use/change, infrastructure accessibility, transit-oriented development, and slum upgrading strategies in order to guide infrastructure investments.",
+       "imgSrc": "images/award-pics/mainProfile.jpg",
+      "start": ["2014,09", 60],
+      "mid": ["2016,01", 15],
+      "end": ["2016,06",  15]
+     }
+  ],
+  "oneTwo": [
+     {
+       "sideHeader": "Bay Area Economics BAE",
+       "text": "I conducted data mining, data visualization, and real estate economic analyses for large development projects in the Eastern United States. The largest market study I undertook was in support of a public/private transit oriented development (TOD) project for modeling housing and office space prospects in Hyattsville, Maryland.  I also provided an economic impact study for a retail strategy of downtown Bethesda, Maryland and  developed and managed  all analytical inputs for the 2014 Baltimore Regional Housing Plan.",
+       "imgSrc": "images/award-pics/mainProfile.jpg",
+    "start": ["2014,05", 50],
+    "end": ["2014,09",  50],
+     }
+  ],
+  "den": [
+     {
+       "sideHeader": "The Reinvestment Fund",
+       "text": "I was placed at TRF as a Wharton Social Impact Fellow. I worked broadly in the finance department, the lending department, and in our in-house think tank on various ad-hoc projects.  Most of my time was spent structuring analytical models to understand the quantifiable development impacts of our lending through the Fresh Food Financing Initiative and the New Market Tax Credit programs creating analytical frameworks for new loan programs. For the finance department I built models for tracking and evaluating our various business lines. My primary role was as a quant, but I also assisted with bond financing, securities registration, compliance systems and presentations.",
+       "imgSrc": "images/award-pics/mainProfile.jpg",
+      "start": ["2012,09", 15],
+      "mid": ["2013,05", 45],
+      "end": ["2013,09",  45],
+     }
+  ]
+}
+ 
+ 
+ 
+ 
+ 
