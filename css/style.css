@@ -140,6 +140,8 @@ body {
   display: block; }
   .modal .modal-dialog .modal-content .modal-body p span:first-child {
     font-weight: bolder; }
+.modal .modal-dialog .modal-content .modal-body .asterisk {
+  font-size: 10px; }
 .modal .modal-dialog .modal-content .contact-list {
   list-style-type: none;
   padding-left: 0px; }

@@ -35,7 +35,7 @@ body {
 		.contentWrapper {
 			display: flex;
 			flex-direction: row;
-			// background: url(../images/door.jpg) no-repeat center center fixed; 
+			// background: url(../images/door.jpg) no-repeat center center fixed;
 			// -webkit-background-size: cover;
 			// -moz-background-size: cover;
 			// -o-background-size: cover;
@@ -188,6 +188,9 @@ body {
 							font-weight: bolder;
 						}
 					}
+				}
+				.asterisk {
+					font-size: 10px;
 				}
 			}
 			.contact-list {
